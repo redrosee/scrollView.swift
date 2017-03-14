@@ -7,9 +7,11 @@ scrollView!.frame = view.bounds
 scrollView!.contentSize = CGSizeMake(view.width, cancelButton!.frame.origin.y + 100)
 }
 
-#2.变量navigation栈里面的VC
+#2.遍历navigation栈里面的VC
 for vc1:UIViewController in (self.navigationController!.viewControllers){
-if vc1.isKindOfClass(KLConversationListControllerViewController){
-let conversationVC = vc1 as! KLConversationListControllerViewController
+    if vc1.isKindOfClass(KLConversationListControllerViewController){
+        let conversationVC = vc1 as! KLConversationListControllerViewController
+        }
+        }
 
 #3.关于snap的约束设置
