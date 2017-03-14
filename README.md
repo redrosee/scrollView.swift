@@ -8,6 +8,7 @@ scrollView!.contentSize = CGSizeMake(view.width, cancelButton!.frame.origin.y + 
 }
 
 2.遍历navigation栈里面的VC
+
 for vc1:UIViewController in (self.navigationController!.viewControllers){
     if vc1.isKindOfClass(KLConversationListControllerViewController){
         let conversationVC = vc1 as! KLConversationListControllerViewController
